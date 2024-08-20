@@ -10,16 +10,11 @@ body {
 
 .name p {
     text-decoration: underline;
-    font-size: 3.5vw;
-    margin-left: 150px;
-    margin-top: 70px;
     color: #545454;
 }
 
-.contact li{
-    margin-left: 200px;
+.contact li {
     color: #545454;
-    font-size: 1.2vw;
 }
 
 .contact a {
@@ -28,7 +23,6 @@ body {
 
 .mid {
     margin: 50px 0 50px 0;
-    text-align: center;
 }
 
 .mid h1 {
@@ -44,7 +38,9 @@ body {
 }
 
 .left,
-.right,.name,.contact {
+.right,
+.name,
+.contact {
     flex: 1;
     padding: 2%;
 }
@@ -57,15 +53,7 @@ body {
     border-bottom: 2px solid #545454;
 }
 
-.skills ul,
-.class ul,
-.projects ul,
-.achieve ul,
-.clubs ul,
-.mid p,
-.edu p {
-    font-size: 1.2vw;
-}
+
 
 .skills h3 {
     display: inline;
@@ -76,10 +64,38 @@ body {
     margin-left: 5px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
     .container {
-        width: 95%;
+        width: 100%;
         height: auto;
+    }
+
+    .mid {
+        text-align: center;
+    }
+
+    .contact li {
+        font-size: 15px;
+    }
+
+    .skills ul,
+    .class ul,
+    .projects ul,
+    .achieve ul,
+    .clubs ul,
+    .mid p,
+    .edu p {
+        font-size: 15px;
+    }
+
+    .name p {
+        font-size: 40px;
+        margin-left: 50px;
+        margin-top: 70px;
+    }
+
+    .contact li {
+        margin-left: 150px;
     }
 
     .edu h1,
@@ -88,18 +104,41 @@ body {
     .projects h1,
     .achieve h1,
     .mid h1 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .edu h2,
     .projects h2 {
-        font-size: 16px;
+        font-size: 17px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .header, .main {
+@media screen and (max-width: 767px) {
+
+    .header,
+    .main {
         flex-direction: column;
+    }
+
+    .name p {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .mid p,
+    .edu h2,
+    .edu p {
+        margin-left: 25px;
+    }
+
+    p,
+    li {
+        font-size: 12px;
+    }
+
+    .mid {
+        text-align: left;
+        margin-left: 10px;
     }
 
     .left,
@@ -121,11 +160,11 @@ body {
     .projects h1,
     .achieve h1,
     .mid h1 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .edu h2,
     .projects h2 {
-        font-size: 13px;
+        font-size: 15px;
     }
 }
